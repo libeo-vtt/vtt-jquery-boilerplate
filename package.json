@@ -1,0 +1,32 @@
+{
+  "name": "jquery-boilerplate",
+  "version": "1.0.0",
+  "description": "A jump-start for VTT jQuery plugins development.",
+  "keywords": [
+    "vtt",
+    "jquery-plugin",
+    "jquery",
+    "boilerplate",
+    "plugins"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/libeo/vtt-jquery-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/libeo/vtt-jquery-boilerplate/issues"
+  },
+  "author": {
+    "name": "Libéo",
+    "email": "info@libeo.com",
+    "url": "http://www.libeo.com"
+  },
+  "dependencies": {
+    "jquery": ">=2.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-minify": "0.0.5"
+  }
+}

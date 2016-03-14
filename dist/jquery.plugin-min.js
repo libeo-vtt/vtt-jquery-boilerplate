@@ -1,0 +1,1 @@
+!function(t){var i=function(i,n){this.MODULENAME_LOWERCASE=t(i),this.config=t.extend({},n||{}),this.classes={active:"is-active"},this.init()};t.extend(i.prototype,{init:function(){}}),t.fn.MODULENAME_LOWERCASE=function(n){return this.each(function(){var E=t(this);if(!E.data("MODULENAME_LOWERCASE")){var e=new i(this,n);E.data("MODULENAME_LOWERCASE",e)}})}}(jQuery);
