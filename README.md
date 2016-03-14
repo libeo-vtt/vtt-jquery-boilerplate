@@ -39,13 +39,9 @@ The basic structure of the project is given in the following way:
 │   ├── jquery.boilerplate.js
 │   └── jquery.boilerplate.min.js
 ├── src/
-│   ├── jquery.boilerplate.coffee
 │   └── jquery.boilerplate.js
-├── .editorconfig
 ├── .gitignore
-├── .jshintrc
-├── .travis.yml
-├── Gruntfile.js
+├── gulpfile.js
 └── package.json
 ```
 
