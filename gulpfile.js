@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var rename = require('gulp-rename');
 var clean = require('gulp-clean');
 var uglify = require('gulp-uglify');
+var runSequence = require('run-sequence');
 
 gulp.task('clean', function() {
     return gulp.src('dist/**/*', { read: false })
@@ -18,4 +19,7 @@ gulp.task('uglify', function() {
 	.pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['clean', 'uglify']);
+gulp.task('default', function() {
+
+	runSequence('clean', 'uglify');
+});
