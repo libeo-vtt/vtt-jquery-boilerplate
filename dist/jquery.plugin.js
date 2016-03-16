@@ -1,38 +1,66 @@
-(function($) {
-    var MODULENAME_UPPERCASE = function(element, options) {
-        this.MODULENAME_LOWERCASE = $(element);
-        this.config = $.extend({
+// the semi-colon before function invocation is a safety net against concatenated
+// scripts and/or other plugins which may not be closed properly.
+;( function( $, window, document, undefined ) {
 
-        }, options || {});
+    "use strict";
 
-        this.classes = {
-            active: 'is-active'
-        };
+        // undefined is used here as the undefined global variable in ECMAScript 3 is
+        // mutable (ie. it can be changed by someone else). undefined isn't really being
+        // passed in so we can ensure the value of it is truly undefined. In ES5, undefined
+        // can no longer be modified.
 
-        this.init();
-    };
+        // window and document are passed through as local variables rather than global
+        // as this (slightly) quickens the resolution process and can be more efficiently
+        // minified (especially when both are regularly referenced in your plugin).
 
-    $.extend(MODULENAME_UPPERCASE.prototype, {
+        // Create the defaults once
+        var pluginName = "defaultPluginName",
+            defaults = {
+                propertyName: "value"
+            };
 
-        // Component initialization
-        init: function() {
+        // The actual plugin constructor
+        function Plugin ( element, options ) {
+            this.element = element;
 
+            // jQuery has an extend method which merges the contents of two or
+            // more objects, storing the result in the first object. The first object
+            // is generally empty as we don't want to alter the default options for
+            // future instances of the plugin
+            this.settings = $.extend( {}, defaults, options );
+            this._defaults = defaults;
+            this._name = pluginName;
+            this.init();
         }
 
-    });
+        // Avoid Plugin.prototype conflicts
+        $.extend( Plugin.prototype, {
+            init: function() {
 
-    $.fn.MODULENAME_LOWERCASE = function(options) {
-        return this.each(function() {
-            var element = $(this);
+                // Place initialization logic here
+                // You already have access to the DOM element and
+                // the options via the instance, e.g. this.element
+                // and this.settings
+                // you can add more functions like the one below and
+                // call them like the example below
+                this.yourOtherFunction( "jQuery Boilerplate" );
+            },
+            yourOtherFunction: function( text ) {
 
-            // Return early if this element already has a plugin instance
-            if (element.data('MODULENAME_LOWERCASE')) return;
+                // some logic
+                $( this.element ).text( text );
+            }
+        } );
 
-            // pass options to plugin constructor
-            var MODULENAME_LOWERCASE = new MODULENAME_UPPERCASE(this, options);
+        // A really lightweight plugin wrapper around the constructor,
+        // preventing against multiple instantiations
+        $.fn[ pluginName ] = function( options ) {
+            return this.each( function() {
+                if ( !$.data( this, "plugin_" + pluginName ) ) {
+                    $.data( this, "plugin_" +
+                        pluginName, new Plugin( this, options ) );
+                }
+            } );
+        };
 
-            // Store plugin object in this element's data
-            element.data('MODULENAME_LOWERCASE', MODULENAME_LOWERCASE);
-        });
-    };
-})(jQuery);
+} )( jQuery, window, document );
