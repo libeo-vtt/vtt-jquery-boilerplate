@@ -45,32 +45,31 @@ The basic structure of the project is given in the following way:
 └── package.json
 ```
 
-#### [demo/](https://github.com/libeo/vtt-jquery-boilerplate/tree/master/demo)
+#### [demo/](https://github.com/libeo-vtt/vtt-jquery-boilerplate/tree/master/demo)
 
 Contains a simple HTML file to demonstrate your plugin.
 
-#### [dist/](https://github.com/libeo/vtt-jquery-boilerplate/tree/master/dist)
+#### [dist/](https://github.com/libeo-vtt/vtt-jquery-boilerplate/tree/master/dist)
 
 This is where the generated files are stored once Gulp runs.
 
-#### [src/](https://github.com/libeo/vtt-jquery-boilerplate/tree/master/src)
+#### [src/](https://github.com/libeo-vtt/vtt-jquery-boilerplate/tree/master/src)
 
 Contains the JavaScript files responsible for your plugin.
 
-#### [.gitignore](https://github.com/libeo/vtt-jquery-boilerplate/tree/master/.gitignore)
+#### [.gitignore](https://github.com/libeo-vtt/vtt-jquery-boilerplate/tree/master/.gitignore)
 
 List of files that we don't want Git to track.
 
 > Check this [Git Ignoring Files Guide](https://help.github.com/articles/ignoring-files) for more details.
 
-#### [gulpfile.js](https://github.com/libeo/vtt-jquery-boilerplate/tree/master/gulpfile.js)
+#### [gulpfile.js](https://github.com/libeo-vtt/vtt-jquery-boilerplate/tree/master/gulpfile.js)
 
+Contains all automated tasks using Gulp.
 
-Contains all automated tasks using Grunt.
+> Check [gulpjs.com](http://gulpjs.com/) if you haven't heard about this project yet.
 
-> Check [gruntjs.com](http://gruntjs.com) if you haven't heard about this project yet.
-
-#### [package.json](https://github.com/libeo/vtt-jquery-boilerplate/tree/master/package.json)
+#### [package.json](https://github.com/libeo-vtt/vtt-jquery-boilerplate/tree/master/package.json)
 
 Specify all dependencies loaded via Node.JS.
 
@@ -78,5 +77,5 @@ Specify all dependencies loaded via Node.JS.
 
 ## History
 
-Check [Releases](https://github.com/libeo/vtt-jquery-boilerplate/releases) for detailed changelog.
+Check [Releases](https://github.com/libeo-vtt/vtt-jquery-boilerplate/releases) for detailed changelog.
 
