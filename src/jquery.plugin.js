@@ -16,7 +16,7 @@
         // Create the defaults once
         var pluginName = "defaultPluginName",
             defaults = {
-                propertyName: "value"
+                customClasses: {},
             };
 
         // The actual plugin constructor
@@ -28,6 +28,19 @@
             // is generally empty as we don't want to alter the default options for
             // future instances of the plugin
             this.settings = $.extend( {}, defaults, options );
+
+            this.classes = $.extend({
+                active: 'is-active',
+                open: 'is-open',
+                hover: 'is-hover',
+                clicked: 'is-clicked',
+                extern: 'is-external',
+                error: 'is-error',
+                a11y: 'l-a11y',
+                zoom: 'l-zoomed',
+                font: 'l-font'
+            }, this.settings.customClasses || {});
+
             this._defaults = defaults;
             this._name = pluginName;
             this.init();
