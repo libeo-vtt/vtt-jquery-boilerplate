@@ -11,7 +11,7 @@ This project won't seek to provide a perfect solution to every possible pattern,
 1. Include jQuery:
 
 	```html
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	```
 
 2. Include plugin's code:
