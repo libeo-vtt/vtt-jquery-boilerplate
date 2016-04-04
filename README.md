@@ -2,10 +2,6 @@
 
 ### A jump-start for VTT jQuery plugins development
 
-So, you've tried your hand at writing jQuery plugins and you're comfortable putting together something that probably works. Awesome! Thing is, you think there might be better ways you could be writing them - you've seen them done a number of different ways in the wild, but aren't really sure what the differences between these patterns are or how to get started with them.
-
-This project won't seek to provide a perfect solution to every possible pattern, but will attempt to cover a simple template for beginners and above. By using a basic defaults object, simple constructor for assigning the element to work with and extending options with defaults and a lightweight wrapper around the constructor to avoid issues with multiple instantiations.
-
 ## Usage
 
 1. Include jQuery:
@@ -17,14 +13,14 @@ This project won't seek to provide a perfect solution to every possible pattern,
 2. Include plugin's code:
 
 	```html
-	<script src="dist/jquery.boilerplate.min.js"></script>
+	<script src="path/to/jquery.plugin.js"></script>
 	```
 
 3. Call the plugin:
 
 	```javascript
-	$("#element").defaultPluginName({
-		propertyName: "a custom value"
+	$("#element").MODULENAME_LOWERCASE({
+		// config
 	});
 	```
 
@@ -36,11 +32,12 @@ The basic structure of the project is given in the following way:
 ├── demo/
 │   └── index.html
 ├── dist/
-│   ├── jquery.boilerplate.js
-│   └── jquery.boilerplate.min.js
+│   ├── jquery.plugin.js
+│   └── jquery.plugin.min.js
 ├── src/
-│   └── jquery.boilerplate.js
+│   └── jquery.plugin.js
 ├── .gitignore
+├── bower.json
 ├── gulpfile.js
 └── package.json
 ```
@@ -62,6 +59,12 @@ Contains the JavaScript files responsible for your plugin.
 List of files that we don't want Git to track.
 
 > Check this [Git Ignoring Files Guide](https://help.github.com/articles/ignoring-files) for more details.
+
+#### [bower.json](https://github.com/libeo-vtt/vtt-jquery-boilerplate/tree/master/gulpfile.js)
+
+Specify all dependencies loaded via Bower.
+
+> Check [bower.io](http://bower.io//) if you haven't heard about this project yet.
 
 #### [gulpfile.js](https://github.com/libeo-vtt/vtt-jquery-boilerplate/tree/master/gulpfile.js)
 

@@ -1,8 +1,8 @@
 (function($) {
     var MODULENAME_UPPERCASE = function(element, options) {
         this.MODULENAME_LOWERCASE = $(element);
+
         this.config = $.extend({
-            test: 'test1',
             customClasses: {}
         }, options || {});
 
@@ -22,7 +22,7 @@
 
         // Component initialization
         init: function() {
-            console.log('Module initiated -> ' + this.config.test);
+            console.log('Module ' + MODULENAME_LOWERCASE + ' initiated');
         }
 
     });

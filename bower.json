@@ -6,18 +6,12 @@
     "libeo <info@libeo.com>"
   ],
   "description": "A jump-start for VTT jQuery plugins development.",
-  "main": "dist/jquery.plugin.min.js",
-  "license": "MIT",
+  "main": "dist/jquery.plugin.js",
   "private": true,
   "ignore": [
     "node_modules"
   ],
   "dependencies": {
     "jquery": "^2.2.2"
-  },
-  "overrides": {
-    "jquery": {
-      "main": ["./dist/jquery.min.js"]
-    }
   }
 }
