@@ -41,37 +41,37 @@ The basic structure of the project is given in the following way:
 └── package.json
 ```
 
-#### [demo/](./demo)
+#### [demo/](demo)
 
 Contains a simple HTML file to demonstrate your plugin.
 
-#### [dist/](./dist)
+#### [dist/](dist)
 
 This is where the generated files are stored once Gulp runs.
 
-#### [src/](./src)
+#### [src/](src)
 
 Contains the JavaScript files responsible for your plugin.
 
-#### [.gitignore](./.gitignore)
+#### [.gitignore](.gitignore)
 
 List of files that we don't want Git to track.
 
 > Check this [Git Ignoring Files Guide](https://help.github.com/articles/ignoring-files) for more details.
 
-#### [bower.json](./bower.json)
+#### [bower.json](bower.json)
 
 Specify all dependencies loaded via Bower.
 
 > Check [bower.io](http://bower.io//) if you haven't heard about this project yet.
 
-#### [gulpfile.js](./gulpfile.js)
+#### [gulpfile.js](gulpfile.js)
 
 Contains all automated tasks using Gulp.
 
 > Check [gulpjs.com](http://gulpjs.com/) if you haven't heard about this project yet.
 
-#### [package.json](./package.json)
+#### [package.json](package.json)
 
 Specify all dependencies loaded via Node.JS.
 
@@ -79,5 +79,5 @@ Specify all dependencies loaded via Node.JS.
 
 ## History
 
-Check [Releases](/releases) for detailed changelog.
+Check [Releases](../../releases) for detailed changelog.
 
