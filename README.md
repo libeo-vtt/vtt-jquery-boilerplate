@@ -1,5 +1,5 @@
-# VTT jQuery Boilerplate
-A jump-start for VTT jQuery plugins development
+# VTT jQuery MODULENAME_UPPERCASE Plugin
+MODULE_DESCRIPTION
 
 ## Usage
 

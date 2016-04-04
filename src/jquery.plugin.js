@@ -1,3 +1,6 @@
+// MODULENAME_UPPERCASE jQuery Plugin
+// MODULE_DESCRIPTION
+
 (function($) {
     var MODULENAME_UPPERCASE = function(element, options) {
         this.MODULENAME_LOWERCASE = $(element);
