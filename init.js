@@ -74,7 +74,7 @@ inquirer.prompt(questions, function(answers) {
     fs.renameSync('./src/jquery.plugin.js', './src/jquery.' + answers.name + '.js');
 
     // Save new project values
-    glob(['./src/jquery.' + answers.name + '.js', './demo/index.html'], function(error, files) {
+    glob(['./src/jquery.' + answers.name + '.js', './demo/index.html', './README.md'], function(error, files) {
         if (error) return console.log(error);
 
         for (var i = 0, t = files.length; i < t; i++) {

@@ -1,6 +1,5 @@
 # VTT jQuery Boilerplate
-
-### A jump-start for VTT jQuery plugins development
+A jump-start for VTT jQuery plugins development
 
 ## Usage
 
@@ -13,7 +12,7 @@
 2. Include plugin's code:
 
 	```html
-	<script src="path/to/jquery.plugin.js"></script>
+	<script src="path/to/jquery.MODULENAME_LOWERCASE.js"></script>
 	```
 
 3. Call the plugin:
@@ -32,10 +31,10 @@ The basic structure of the project is given in the following way:
 ├── demo/
 │   └── index.html
 ├── dist/
-│   ├── jquery.plugin.js
-│   └── jquery.plugin.min.js
+│   ├── jquery.MODULENAME_LOWERCASE.js
+│   └── jquery.MODULENAME_LOWERCASE.min.js
 ├── src/
-│   └── jquery.plugin.js
+│   └── jquery.MODULENAME_LOWERCASE.js
 ├── .gitignore
 ├── bower.json
 ├── gulpfile.js
