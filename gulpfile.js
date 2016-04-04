@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-var bump = require('gulp-bump');
 var clean = require('gulp-clean');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');

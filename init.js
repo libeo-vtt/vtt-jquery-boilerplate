@@ -3,7 +3,6 @@
 var fs = require('fs');
 var rm = require('rimraf');
 var glob = require('glob');
-var cmd = require('node-cmd');
 var program = require('commander');
 var inquirer = require('inquirer');
 var package = require('./package.json');
@@ -42,10 +41,6 @@ var questions = [{
     name: 'repository',
     message: 'Plugin repository:'
 }];
-
-// Install node and bower dependencies
-cmd.run('echo "Installing Node.js and Bower dependencies..."');
-cmd.run('npm install && bower install');
 
 // Prompt user for project informations
 inquirer.prompt(questions, function(answers) {
