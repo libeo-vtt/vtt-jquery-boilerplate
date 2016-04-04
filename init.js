@@ -5,10 +5,11 @@ var fs = require('fs');
 var rm = require('rimraf');
 var inquirer = require('inquirer');
 var glob = require('glob');
-var project = require('./package.json');
+var package = require('./package.json');
+var bower = require('./bower.json');
 
 program
-    .version(project.version)
+    .version(package.version)
     .option('-n, --name', 'project name')
     .parse(process.argv);
 
@@ -22,6 +23,13 @@ var questions = [{
     message: 'Plugin name (lowercase):',
     validate: function(input) {
         return input !== '' ? true : 'You must enter a valid name.';
+    }
+}, {
+    name: 'version',
+    message: 'Project version:',
+    default: '0.0.0',
+    validate: function(input) {
+        return input !== '' ? true : 'You must enter a valid version.';
     }
 }, {
     name: 'description',
@@ -38,13 +46,13 @@ var questions = [{
 inquirer.prompt(questions, function(answers) {
 
     // Update package.json values
-    package.name = answers.name;
+    package.name = 'vtt-jquery-' + answers.name;
     package.description = answers.description;
     package.keywords = answers.keywords;
     package.repository = answers.repository;
 
     // Update bower.json values
-    bower.name = answers.name;
+    bower.name = 'vtt-jquery-' + answers.name;
     bower.description = answers.description;
     bower.keywords = answers.keywords;
     bower.main = 'dist/jquery.' + answers.name + '.js';

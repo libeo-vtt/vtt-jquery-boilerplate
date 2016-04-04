@@ -9,13 +9,6 @@
     "boilerplate",
     "plugins"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/libeo/vtt-jquery-boilerplate.git"
-  },
-  "bugs": {
-    "url": "https://github.com/libeo/vtt-jquery-boilerplate/issues"
-  },
   "author": {
     "name": "Libéo",
     "email": "info@libeo.com",
