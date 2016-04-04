@@ -2,7 +2,7 @@
 
 var fs = require('fs');
 var rm = require('rimraf');
-var glob = require('glob');
+var glob = require('multi-glob').glob;
 var program = require('commander');
 var inquirer = require('inquirer');
 var package = require('./package.json');
