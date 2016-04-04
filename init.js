@@ -47,12 +47,14 @@ inquirer.prompt(questions, function(answers) {
 
     // Update package.json values
     package.name = 'vtt-jquery-' + answers.name;
+    package.version = answers.version;
     package.description = answers.description;
     package.keywords = answers.keywords;
     package.repository = answers.repository;
 
     // Update bower.json values
     bower.name = 'vtt-jquery-' + answers.name;
+    bower.version = answers.version;
     bower.description = answers.description;
     bower.keywords = answers.keywords;
     bower.main = 'dist/jquery.' + answers.name + '.js';
@@ -72,7 +74,7 @@ inquirer.prompt(questions, function(answers) {
     fs.renameSync('./src/jquery.plugin.js', './src/jquery.' + answers.name + '.js');
 
     // Save new project values
-    glob('./src/jquery.' + answers.name + '.js', function(error, files) {
+    glob(['./src/jquery.' + answers.name + '.js', './demo/index.html'], function(error, files) {
         if (error) return console.log(error);
 
         for (var i = 0, t = files.length; i < t; i++) {

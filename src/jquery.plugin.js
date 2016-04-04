@@ -3,7 +3,7 @@
         this.MODULENAME_LOWERCASE = $(element);
 
         this.config = $.extend({
-            customClasses: {}
+            customGlobalClasses: {}
         }, options || {});
 
         this.classes = $.extend({
@@ -13,7 +13,7 @@
             clicked: 'is-clicked',
             extern: 'is-external',
             error: 'is-error'
-        }, this.config.customClasses || {});
+        }, this.config.customGlobalClasses || {});
 
         this.init();
     };
@@ -22,7 +22,7 @@
 
         // Component initialization
         init: function() {
-            console.log('Module ' + MODULENAME_LOWERCASE + ' initiated');
+            console.log('Module MODULENAME_LOWERCASE initiated');
         }
 
     });
