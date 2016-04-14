@@ -86,8 +86,8 @@ inquirer.prompt(questions, function(answers) {
                     if (error) return console.log(error);
 
                     data = replaceAll('MODULE_DESCRIPTION', answers.description, data);
-                    data = replaceAll('MODULENAME_LOWERCASE', answers.name, data);
-                    data = replaceAll('MODULENAME_UPPERCASE', answers.name.charAt(0).toUpperCase() + answers.name.slice(1), data);
+                    data = replaceAll('MODULE_NAME_LOWERCASE', answers.name, data);
+                    data = replaceAll('MODULE_NAME_UPPERCASE', answers.name.charAt(0).toUpperCase() + answers.name.slice(1), data);
 
                     fs.writeFile(file, data, 'utf8', function(error) {
                         if (error) return console.log(error);
