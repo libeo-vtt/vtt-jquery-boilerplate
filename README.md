@@ -18,7 +18,7 @@ MODULE_DESCRIPTION
 3. Call the plugin:
 
 	```javascript
-	$("#element").MODULENAME_LOWERCASE({
+	$('#element').MODULENAME_LOWERCASE({
 		// config
 	});
 	```
