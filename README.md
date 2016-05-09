@@ -23,7 +23,7 @@ MODULE_DESCRIPTION
 
 	// Custom configuration
 	$('.MODULE_NAME_LOWERCASE-element').MODULE_NAME_LOWERCASE({
-		// configd
+		// config
 	});
 	```
 
