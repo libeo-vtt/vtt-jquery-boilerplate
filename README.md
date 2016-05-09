@@ -1,4 +1,4 @@
-# jQuery MODULENAME_UPPERCASE Plugin
+# jQuery MODULE_NAME_UPPERCASE Plugin
 MODULE_DESCRIPTION
 
 ## Usage
@@ -12,25 +12,25 @@ MODULE_DESCRIPTION
 2. Include plugin's code:
 
 	```html
-	<script src="path/to/jquery.MODULENAME_LOWERCASE.js"></script>
+	<script src="path/to/jquery.MODULE_NAME_LOWERCASE.js"></script>
 	```
 
 3. Call the plugin:
 
 	```javascript
 	// Default configuration
-	$('.MODULENAME_LOWERCASE-element').MODULENAME_LOWERCASE();
+	$('.MODULE_NAME_LOWERCASE-element').MODULE_NAME_LOWERCASE();
 
 	// Custom configuration
-	$('.MODULENAME_LOWERCASE-element').MODULENAME_LOWERCASE({
+	$('.MODULE_NAME_LOWERCASE-element').MODULE_NAME_LOWERCASE({
 		// configd
 	});
 	```
 
 ## Downloads
 
-* [Source](https://raw.githubusercontent.com/libeo-vtt/jquery-MODULENAME_LOWERCASE/master/dist/jquery.MODULENAME_LOWERCASE.js)
-* [Minified version](https://raw.githubusercontent.com/libeo-vtt/jquery-MODULENAME_LOWERCASE/master/dist/jquery.MODULENAME_LOWERCASE.min.js)
+* [Source](https://raw.githubusercontent.com/libeo-vtt/jquery-MODULE_NAME_LOWERCASE/master/dist/jquery.MODULE_NAME_LOWERCASE.js)
+* [Minified version](https://raw.githubusercontent.com/libeo-vtt/jquery-MODULE_NAME_LOWERCASE/master/dist/jquery.MODULE_NAME_LOWERCASE.min.js)
 
 ## Configuration
 
@@ -70,10 +70,10 @@ callback1 description
 #### `.method2()`
 
 ```javascript
-var MODULENAME_LOWERCASE = $('.element').MODULENAME_LOWERCASE();
+var MODULE_NAME_LOWERCASE = $('.element').MODULE_NAME_LOWERCASE();
 
-MODULENAME_LOWERCASE.method1();
-MODULENAME_LOWERCASE.method2();
+MODULE_NAME_LOWERCASE.method1();
+MODULE_NAME_LOWERCASE.method2();
 ```
 
 ---
