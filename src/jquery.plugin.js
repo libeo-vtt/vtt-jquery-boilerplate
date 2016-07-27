@@ -33,7 +33,7 @@
             methodName: $.proxy(function() {
                 console.log('methodName function called');
             }, this)
-        }
+        };
 
         this.init();
     };
